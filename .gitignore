@@ -1,0 +1,6 @@
+# dependencies
+/node-modules
+
+.vscode
+.DS_Store
+.idea
