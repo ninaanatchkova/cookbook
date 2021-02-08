@@ -1,0 +1,8 @@
+version: "3"
+services:
+  api-gateway:
+    build: "./api-gateway"
+    ports:
+      - 7000:7000
+    volumes:
+    - ./api-gateway:/opt/app
