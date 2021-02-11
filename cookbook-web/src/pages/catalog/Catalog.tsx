@@ -21,7 +21,7 @@ const Catalog = () => {
     <div className="catalog">
       {data ? (
         <>
-          {data.feed.recipes.map((recipe: any) => (
+          {data.catalog.recipes.map((recipe: any) => (
             <Recipe key={recipe.id} recipe={recipe} />
          ))}
         </>
