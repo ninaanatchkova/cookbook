@@ -1,10 +1,5 @@
-const resolvers = {
-  Query: {
-    info: () => `This is the API`
-  }
-} 
+import * as Query from "./Query";
 
-// const resolvers = { Mutation, Query, UserSession };
-
+const resolvers = { Query };
 
 export default resolvers;
