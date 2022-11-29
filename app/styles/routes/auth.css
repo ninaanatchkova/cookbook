@@ -1,0 +1,45 @@
+.auth-form__background {
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-form__card {
+  background-color: var(--ui-paper);
+  padding: var(--spacing-increased);
+  border-radius: var(--border-radius);
+}
+
+.auth-form__card button {
+  width: 100%;
+}
+
+@media (max-width: 599px) {
+  .auth-form__background.login {
+    background-image: url("/backgrounds/login-bg_600.jpg");
+  }
+  .auth-form__background.sign-up {
+    background-image: url("/backgrounds/sign-up-bg_600.jpg");
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1279px) {
+  .auth-form__background.login {
+    background-image: url("/backgrounds/login-bg_1280.jpg");
+  }
+  .auth-form__background.sign-up {
+    background-image: url("/backgrounds/sign-up-bg_1280.jpg");
+  }
+}
+
+@media (min-width: 1280px ) {
+  .auth-form__background.login {
+    background-image: url("/backgrounds/login-bg_2400.jpg");
+  }
+  .auth-form__background.sign-up {
+    background-image: url("/backgrounds/sign-up-bg_2400.jpg");
+  }
+}

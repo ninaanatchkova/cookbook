@@ -1,0 +1,27 @@
+body,
+body.light-theme {
+  --ui-paper: #FFFDF9;
+  --ui-surface: #FFF8E0;
+  --ui-ink: #080808;
+  --ui-highlight: #C64848;
+  --ui-divider: #404040;
+  --ui-text-on-highlight: #f8f8f8;
+}
+
+body.dark-theme {
+  --ui-paper: #080808;
+  --ui-surface: #000000;
+  --ui-ink: #f8f8f8;
+  --ui-highlight: #FFCB12;
+  --ui-divider: #C0C0C0;
+  --ui-text-on-highlight: #f8f8f8;
+}
+
+:root {
+  --ui-gray: #eeeeee;
+  --ui-black: #333333;
+}
+
+.ui-highlight {
+  color: var(--ui-highlight);
+}

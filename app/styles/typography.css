@@ -1,0 +1,76 @@
+:root {
+  --font-body: 'Poppins', sans-serif;
+  --font-display: 'BioRhyme', serif;
+  --text-size-title: 2.25rem;
+  --text-size-subtitle: 1.5rem;
+  --text-size-regular: 1rem;
+  --text-size-action: 1rem;
+  --text-size-small: 0.875rem;
+  
+  --line-height-title: 2.625rem;
+  --line-height-subtitle: 1.875rem;
+  --line-height-regular: 1.5rem;
+  --line-height-action: 1.5rem;
+  --line-height-small: 1.25rem;
+}
+
+@media (max-width: 1023px) {
+  :root {
+    --text-size-title: 1.5rem;
+    --text-size-subtitle: 1.125rem;
+    --text-size-regular: 0.875rem;
+    --text-size-action: 0.875rem;
+    --text-size-small: 0.75rem;
+
+    --line-height-title: 2.625rem;
+    --line-height-subtitle: 1.5rem;
+    --line-height-regular: 1.325rem;
+    --line-height-action: 1.325rem;
+    --line-height-small: 1.125rem;
+  }
+}
+
+.text-regular {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: var(--text-size-body);
+}
+
+.text-emphasized {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-style: italic;
+  font-size: var(--text-size-body);
+}
+
+.text-display {
+  font-family: var(--font-display);
+}
+
+.text-title {
+  font-family: var(--font-display);
+  font-size: var(--text-size-title);
+  line-height: var(--line-height-title);
+}
+
+.text-subtitle {
+  font-family: var(--font-display);
+  font-size: var(--text-size-subtitle);
+  line-height: var(--line-height-subtitle);
+}
+
+.text-action {
+  font-family: var(--font-body);
+  font-size: var(--text-size-action);
+  line-height: var(--line-height-action);
+}
+
+.text-small {
+  font-family: var(--font-body);
+  font-size: var(--text-size-small);
+  line-height: var(--line-height-small);
+}
+
+.text-center {
+  text-align: center;
+}

@@ -1,0 +1,23 @@
+ul.nav-tabs {
+  margin: 0 0 var(--spacing-small);
+  padding: 0;
+}
+
+.nav-tabs li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.nav-tabs li:not(:last-child) {
+  padding-right: var(--spacing-regular);
+}
+
+.nav-tabs li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: var(--spacing-regular) 0;
+}
+
+.nav-tabs li a.nav-tab-active {
+  border-top: solid 4px var(--ui-highlight);
+}

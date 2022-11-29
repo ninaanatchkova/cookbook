@@ -1,0 +1,13 @@
+:root {
+  --screen-size-xs-min: 320px;
+  --screen-size-xs-max: 599px;
+  --screen-size-sm-min: 600px;
+  --screen-size-sm-max: 1023px;
+  --screen-size-md-min: 1024px;
+  --screen-size-md-max: 1279px;
+  --screen-size-reg-min: 1280px;
+  --screen-size-reg-max: 1439px;
+  --screen-size-lg-min: 1440px;
+  --screen-size-lg-max: 1919px;
+  --screen-size-xl-min: 1920px;
+}

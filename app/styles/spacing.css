@@ -1,0 +1,53 @@
+:root {
+  --spacing-huge: 4rem;
+  --spacing-large: 2rem;
+  --spacing-increased: 1.5rem;
+  --spacing-regular: 1rem;
+  --spacing-decreased: 0.75rem;
+  --spacing-small: 0.5rem;
+  --spacing-tiny: 0.25rem;
+  --spacing-micro: 0.125rem;
+
+  --border-radius: 4px;
+}
+
+
+.margin-bottom-micro {
+  margin-bottom: var(--spacing-micro);
+}
+
+.margin-bottom-tiny {
+  margin-bottom: var(--spacing-tiny);
+}
+
+.margin-bottom-small {
+  margin-bottom: var(--spacing-small);
+}
+
+.margin-bottom-decreased {
+  margin-bottom: var(--spacing-decreased);
+}
+
+.margin-bottom-regular {
+  margin-bottom: var(--spacing-regular);
+}
+
+.margin-bottom-increased {
+  margin-bottom: var(--spacing-increased);
+}
+
+.margin-bottom-large {
+  margin-bottom: var(--spacing-large);
+}
+
+.margin-bottom-huge {
+  margin-bottom: var(--spacing-increased);
+}
+
+.margin-right-micro {
+  margin-right: var(--spacing-micro);
+}
+
+.margin-right-tiny {
+  margin-right: var(--spacing-tiny);
+}

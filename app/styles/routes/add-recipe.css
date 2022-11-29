@@ -1,0 +1,45 @@
+.recipe-form__background {
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recipe-form__card {
+  background-color: var(--ui-paper);
+  padding: var(--spacing-increased);
+  border-radius: var(--border-radius);
+}
+
+.recipe-form__card button {
+  width: 100%;
+}
+
+@media (max-width: 599px) {
+  .recipe-form__background.name-details {
+    background-image: url("/backgrounds/add-recipe-name-bg_600.jpg");
+  }
+  .recipe-form__background.ingredients {
+    background-image: url("/backgrounds/add-recipe-ingredients-bg_600.jpg");
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1279px) {
+  .recipe-form__background.name-details {
+    background-image: url("/backgrounds/add-recipe-name-bg_1280.jpg");
+  }
+  .recipe-form__background.ingredients {
+    background-image: url("/backgrounds/add-recipe-ingredients-bg_1280.jpg");
+  }
+}
+
+@media (min-width: 1280px ) {
+  .recipe-form__background.name-details {
+    background-image: url("/backgrounds/add-recipe-name-bg_2400.jpg");
+  }
+  .recipe-form__background.ingredients {
+    background-image: url("/backgrounds/add-recipe-ingredients-bg_2400.jpg");
+  }
+}
