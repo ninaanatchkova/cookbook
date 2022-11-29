@@ -25,3 +25,7 @@ body.dark-theme {
 .ui-highlight {
   color: var(--ui-highlight);
 }
+
+.ui-ink {
+  color: var(--ui-ink);
+}

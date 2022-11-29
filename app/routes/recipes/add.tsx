@@ -1,6 +1,7 @@
 import { ActionFunction, LoaderFunction, redirect } from "@remix-run/node";
 import { Form, useLoaderData } from "@remix-run/react";
 import { useState } from "react";
+import { requireUserId } from "~/session.server";
 
 // import { db } from "~/utils/db.server";
 // import { getUserId, requireUserId } from "~/utils/session.server";
@@ -8,6 +9,10 @@ import { getIngredients, getSteps } from "./recipeFormFunctions";
 
 export const loader: LoaderFunction = async ({request}) => {
   const data = {
+    recipeCuisine: [],
+    recipeCategory: [],
+    recipeCourse: [],
+    ingredientUnit: [],
     // recipeCuisine: await db.recipeCuisine.findMany(),
     // recipeCategory: await db.recipeCategory.findMany(),
     // recipeCourse: await db.recipeCourse.findMany(),
@@ -15,14 +20,15 @@ export const loader: LoaderFunction = async ({request}) => {
   };
  
   // let userId = await getUserId(request);
-  if (!userId) throw new Response("Unauthorized", { status: 401 });
-  return {...data, userId};
+  // if (!userId) throw new Response("Unauthorized", { status: 401 });
+  // return {...data, userId};
+  return data
 };
 
 export const action: ActionFunction = async ({
   request,
 }) => {
-  // const userId = await requireUserId(request);
+  const userId = await requireUserId(request);
   const formData = await request.formData();
   const fields = Object.fromEntries(formData);
 

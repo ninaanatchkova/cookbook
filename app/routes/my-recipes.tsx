@@ -1,4 +1,5 @@
 import { LinksFunction } from "@remix-run/node";
+import { Link } from "@remix-run/react";
 
 import stylesUrl from "~/styles/routes/recipes.css";
 
@@ -10,8 +11,9 @@ export default function MyRecipesRoute() {
   return (
     <div className="recipe-catalog site-content-wide">
       <h1 className="text-title margin-bottom-large">My recipes</h1>
-      <ul className="recipe-list">
-        {/* <li className="recipe-tile">
+      <ul className="recipe-list margin-bottom-large">
+      <Link to="/recipes/lol" className="ui-ink">
+        <li className="recipe-tile">
           <div className="recipe-tile__image">
             <img className="sized-image" src="https://images.unsplash.com/photo-1530734575165-ce39d996fbaa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bWluZXN0cm9uZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60"></img>
           </div>
@@ -22,7 +24,9 @@ export default function MyRecipesRoute() {
           <li>Easy</li>
           <li>45 min</li>
         </ul>
-        </li> */}
+        </li>
+        </Link>
+        <Link to="/recipes/lol" className="ui-ink">
         <li className="recipe-tile">
         <div className="recipe-tile__image">
             <img className="sized-image" src="https://images.unsplash.com/photo-1572453800999-e8d2d1589b7c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cmF0YXRvdWlsbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60"></img>
@@ -35,6 +39,8 @@ export default function MyRecipesRoute() {
             <li>55 min</li>
           </ul>
         </li>
+        </Link>
+        <Link to="/recipes/lol" className="ui-ink">
         <li className="recipe-tile">
         <div className="recipe-tile__image">
             <img className="sized-image" src="https://images.unsplash.com/photo-1515754164677-ec9796621bcb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"></img>
@@ -47,7 +53,9 @@ export default function MyRecipesRoute() {
             <li>60 min</li>
           </ul>
         </li>
-        {/* <li className="recipe-tile">
+        </Link>
+        <Link to="/recipes/lol" className="ui-ink">
+        <li className="recipe-tile">
         <div className="recipe-tile__image">
             <img className="sized-image" src="https://images.unsplash.com/photo-1546964124-0cce460f38ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"></img>
           </div>
@@ -59,19 +67,25 @@ export default function MyRecipesRoute() {
             <li>120 min</li>
           </ul>
           </li>
+        </Link>
+        <Link to="/recipes/lol" className="ui-ink">
           <li className="recipe-tile">
-        <div className="recipe-tile__image">
-            <img className="sized-image" src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"></img>
-          </div>
-          <h2 className="text-subtitle margin-bottom-small">Crispy fries</h2>
-          <p className="text-emphasized margin-bottom-regular">by Recipe Lover</p>
-          <ul className="horizontal-flex m-dash-separator">
-            <li>Side</li>
-            <li>Easy</li>
-            <li>45 min</li>
-          </ul>
-          </li> */}
+          <div className="recipe-tile__image">
+              <img className="sized-image" src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"></img>
+            </div>
+            <h2 className="text-subtitle margin-bottom-small">Crispy fries</h2>
+            <p className="text-emphasized margin-bottom-regular">by Recipe Lover</p>
+            <ul className="horizontal-flex m-dash-separator">
+              <li>Side</li>
+              <li>Easy</li>
+              <li>45 min</li>
+            </ul>
+            </li>
+        </Link>
+          
       </ul>
+      <Link to="/recipes/add" className="ui-link-button"><span className="text-heading ui-highlight">&#43;</span> <button className="ui-link-button">Create a new Recipe</button></Link>
+      
     </div>
     )
 }
